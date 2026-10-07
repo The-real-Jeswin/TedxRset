@@ -1,0 +1,8 @@
+{
+  "name": "Remix TEDxRSET 2026 — Resonance in Chaos",
+  "description": "Official interactive experience for TEDxRSET 2026 at Rajagiri School of Engineering \u0026 Technology, Kakkanad, Kerala. December 5, 2026.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

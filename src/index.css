@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-display: 'Syne', sans-serif;
+    --font-body: 'Plus Jakarta Sans', sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+  }
+}
+
+.font-display {
+  font-family: 'Syne', sans-serif;
+}
+
+.font-body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.font-mono {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* Custom visual utilities */
+.glow-crimson {
+  box-shadow: 0 0 40px -10px rgba(255, 30, 39, 0.45);
+}
+
+.glow-crimson-lg {
+  box-shadow: 0 0 80px -15px rgba(255, 30, 39, 0.6);
+}
+
+.glow-gold {
+  box-shadow: 0 0 35px -8px rgba(226, 201, 138, 0.35);
+}
+
+.text-gradient-gold {
+  background: linear-gradient(135deg, #FFF6DC 0%, #E2C98A 60%, #B89950 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-crimson {
+  background: linear-gradient(135deg, #FF6B72 0%, #FF1E27 60%, #990B11 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.glass-panel {
+  background: rgba(14, 14, 18, 0.65);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-panel-elevated {
+  background: rgba(20, 20, 26, 0.8);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 30, 39, 0.2);
+}
+
+/* Custom scrollbar for scrollable panels */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(10, 10, 14, 0.8);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 30, 39, 0.35);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 30, 39, 0.7);
+}
+
